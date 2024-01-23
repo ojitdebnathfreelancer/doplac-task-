@@ -161,10 +161,6 @@ body {
   background: rgba(128, 128, 128, 0.5);
 }
 
-/* .child-container .sub-tree > .child-container > .sub-tree > .main-title {
-  margin: 0px 50px;
-} */
-
 .child-container
   .sub-tree:nth-child(1)
   > .child-container
@@ -185,6 +181,10 @@ body {
 
 .child-container .sub-tree:first-child > .curve {
   left: -35px;
+}
+
+.child-container .sub-tree:last-child > .curve {
+  left: -18px;
 }
 
 .child-container .sub-tree:last-child > .curve > .curve1 {

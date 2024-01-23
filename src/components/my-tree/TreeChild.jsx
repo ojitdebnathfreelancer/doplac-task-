@@ -16,7 +16,7 @@ const TreeChild = ({ data }) => {
 
       {!data?.child?.length && (
         <div className="main-plus">
-          <div className="plus"></div>
+          <img src={plus} alt="plus button" className="plus" />
         </div>
       )}
 
