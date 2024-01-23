@@ -161,9 +161,9 @@ body {
   background: rgba(128, 128, 128, 0.5);
 }
 
-.child-container .sub-tree > .child-container > .sub-tree > .main-title {
+/* .child-container .sub-tree > .child-container > .sub-tree > .main-title {
   margin: 0px 50px;
-}
+} */
 
 .child-container
   .sub-tree:nth-child(1)
@@ -181,4 +181,55 @@ body {
   > .main-title {
   position: absolute;
   right: -250px;
+}
+
+.child-container .sub-tree:first-child > .curve {
+  left: -35px;
+}
+
+.child-container .sub-tree:last-child > .curve > .curve1 {
+  transform: rotate(120deg);
+}
+
+.child-container .sub-tree:last-child > .curve > .curve2 {
+  transform: rotate(120deg);
+  left: 95%;
+}
+
+.child-container .sub-tree:last-child > .curve > .plus-button {
+  left: 95%;
+}
+
+.curve {
+  position: absolute;
+  bottom: 0;
+  height: 63%;
+  width: 100%;
+  z-index: 50;
+}
+
+.curve .curve1 {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  transform: translateX(-50%);
+  height: 50%;
+}
+
+.curve .curve2 {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-50%);
+  height: 50%;
+}
+
+.curve .plus-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40%;
+  width: 40%;
+  z-index: 40;
 }
